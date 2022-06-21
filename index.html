@@ -19,14 +19,27 @@
       <img src="moon.png" id="moon">
       <img src="mountains_behind.png" id="mountains_behind">
       <h2 id="text">Moon Light</h2>
-      <a href="#" id="btn">Explore</a>
+      <a href="#sec" id="btn">Explore</a>
       <img src="mountains_front.png" id="mountains_front">
      </section>
-     <div class="sec">
+     <div class="sec" id="sec">
         <h2>Parallax Scroll Effects</h2>
         <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. <br> <br>
            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
            <br> <br> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. <br>  </p>
      </div>
-  </body>
+     
+     <script>
+        let stars = document.getElementbyId('stars');
+        let starsmoon = document.getElementbyId('moon');
+        let mountains_behind = document.getElementbyId('mountains_behind');
+        let mountains_front = document.getElementbyId('mountains_front');
+        let text = document.getElementbyId('text');
+        let btn = document.getElementbyId('btn');
+        
+        window.addEventListener('scroll', function() {
+         let value = window.scrollY;
+         stars.style.left = value + 'px';
+        })
+     </body>
 </html>
