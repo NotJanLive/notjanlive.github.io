@@ -73,6 +73,7 @@ section img
   width: 100%;
   height: 100%;
   object-fit: cover;
+  pointer-events: none;
 }
 section img#moon
 {
@@ -89,7 +90,6 @@ section img#mountains_front
   white-space: nowrap;
   font-size: 7.5vw;
   z-index: 9;
-  
 }
 #btn
 {
@@ -100,4 +100,6 @@ section img#mountains_front
   background: #fff;
   color: #2b1055;
   font-size: 1.5em;
+  z-index: 9;
+  transform: translateY(100px);
 }
