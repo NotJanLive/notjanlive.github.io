@@ -95,7 +95,7 @@ section img#mountains_front
 {
   z-index: 10;
 }
-text
+#text
 {
   position: absolute;
   right: -350px;
@@ -104,7 +104,7 @@ text
   font-size: 7.5vw;
   z-index: 9;
 }
-#title
+title
 {
   position: absolute;
   right: -350px;
