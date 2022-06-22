@@ -104,6 +104,16 @@ section img#mountains_front
   font-size: 7.5vw;
   z-index: 9;
 }
+
+#title
+{
+  position: absolute;
+  right: -350px;
+  color: #fff;
+  white-space: nowrap;
+  font-size: 7.5vw;
+  z-index: 9;
+}
 #btn
 {
   text-decoration: none;
